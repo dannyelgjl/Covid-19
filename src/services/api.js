@@ -11,3 +11,11 @@ export const fetchData = async () => {
     return { confirmed, recovered, deaths, lastUpdate };
   } catch (err) {}
 };
+
+export const featchDailyDate = async () => {
+  try {
+    const { data } = await axios.get(`${url}/daily`);
+
+    console.log(data);
+  } catch (error) {}
+};

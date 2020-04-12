@@ -1,5 +1,5 @@
 import axios from "axios";
-
+// finalizado
 const url = process.env.REACT_APP_API_URL;
 
 export const fetchData = async (country) => {
